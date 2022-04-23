@@ -1,0 +1,11 @@
+{% block content %}
+
+{% for calendar in calendars %}
+<div style="  border-bottom: 2px solid lightblue;">
+<h2>Calendar id: </h2>{{calendar.id}}
+<h2>Calendar summary: </h2>{{calendar.summary}}
+<h2>Calendar timezone: </h2>{{calendar.timeZone}}
+</div>
+{% endfor %}
+
+{% endblock content %}
